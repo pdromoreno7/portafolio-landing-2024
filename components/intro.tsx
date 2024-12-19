@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import imagenProfile from "@/assets/image/miPhoto.jpg";
+import imagenProfile from "@/public/me.jpeg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Inicio", 0.5);
@@ -38,7 +38,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -96,7 +96,7 @@ export default function Intro() {
 
         <a
           className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/CV-Pedro-Moreno-Alvarez-2024-27.pdf"
           download
         >
           Download CV{" "}

@@ -37,7 +37,7 @@ export default function About() {
         </span>
         . También soy competente en herramientas y prácticas como{" "}
         <span className="font-medium">
-          Git Flow, principios SOLID, pruebas unitarias, pruebas end to end y
+          Git Flow, principios SOLID, pruebas unitarias, pruebas end to end,
           arquitectura limpia, CI/CD
         </span>{" "}
         y microfrontends.{" "}
@@ -45,11 +45,14 @@ export default function About() {
       <p className="mb-3">
         {" "}
         Uno de mis logros más emocionantes ha sido liderar el desarrollo de{" "}
-        <span className="italic">Buucly.com</span>, una plataforma en beta que
-        utiliza <span className="font-medium">inteligencia artificial</span>{" "}
-        para generar libros personalizados al instante. Este proyecto me
-        permitió combinar mi experiencia técnica con mi pasión por construir
-        herramientas que mejoren la productividad y la creatividad.{" "}
+        <a href="https://buucly.com/" target="_blank" className="italic">
+          Buucly.com
+        </a>
+        , una plataforma en beta que utiliza{" "}
+        <span className="font-medium">inteligencia artificial</span> para
+        generar libros personalizados al instante. Este proyecto me permitió
+        combinar mi experiencia técnica con mi pasión por construir herramientas
+        que mejoren la productividad y la creatividad.{" "}
       </p>{" "}
       <p className="mb-3">
         {" "}
@@ -67,11 +70,13 @@ export default function About() {
         {" "}
         <span className="italic">Cuando no estoy programando</span>, disfruto
         explorando la intersección entre{" "}
-        <span className="font-medium">tecnología, historia y filosofía</span>.
-        También me encanta aprender nuevas habilidades y desafiarme a mí mismo.
-        Actualmente, estoy profundizando en nuevos frameworks de programación y
-        disfrutando de pasatiempos como tocar música y enseñar desarrollo web a
-        otros.{" "}
+        <span className="font-medium">
+          tecnología, historia y filosofía politica
+        </span>
+        . También me encanta aprender nuevas habilidades y desafiarme a mí
+        mismo. Actualmente, estoy profundizando en nuevos frameworks de
+        programación y disfrutando de pasatiempos como tocar música y enseñar
+        desarrollo web a otros.{" "}
       </p>
     </motion.section>
   );
