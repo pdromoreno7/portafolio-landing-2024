@@ -2,13 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+import dePratiImg from "@/public/deprati.png";
+import dugodoImg from "@/public/dugodo.png";
+import buuclyImg from "@/public/buucly.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "Inicio",
     hash: "#home",
   },
   {
@@ -16,71 +17,100 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Proyectos",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Habilidades",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Experiencia",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "Contacto",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full-Stack Instructor in web development",
+    location: "Soy Henry - Full Remoto",
+    description:
+      "Instructor/profesor de desarrollo web frontend y backend modalidad part time. He enseñado a más de 100 estudiantes, abarcando temas como Programación orientada a objetos, testing, HTLM, CSS, JavaScript, Typescript, React js, Next js, Node.js, Express.js, Nest js, MongoDB y PostgresSQL",
+    icon: React.createElement(CgWorkAlt),
+    date: "Julio 2024 - present",
+  },
+  {
+    title: "Frontend Developer | React Developer",
+    location: "Zabud Tech - Full Remoto",
+    description: `Desarrolle mejoras, una aplicación web con React para poder hacer cargas masivas  de archivos, documentos y carpetas. Mejorando la visualización de carga y rendimiento de la aplicación en el navegador en un 40%`,
+    icon: React.createElement(FaReact),
+    date: "2022 - 2024",
+  },
+  {
+    title: "Ingeniero en desarrollo Drupal/Desarrollador React Native",
+    location: "Software One/Intergrupo - Full Remoto",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Desarrollador Frontend / DIseñador UI ",
+    location: "Adomi Delivery - Full Remoto",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Aumenté las ganancias por delivery en la empresa, logrando diseñar, maquetar y desarrollar una plataforma de recaudo con react js, integrando mercado pago para cobro de comisiones por domicilio. Logré desarrollar una app de gestión de pedidos en web, basado en el flujo de la app móvil. Esto permitió a la empresa gestionar los pedidos en un solo lugar. Tecnologias: React, Next Js, MongoDB, Express js, cloudfare",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2021 - 2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "De Prati",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Trabaje 8 meses una aplicación móvil tipo 'Marketplace' con React Native. La aplicación incluyó características clave como gestión de microcréditos, pagos con tarjeta de crédito, catálogo de productos de varias marcas y gestión de envío a domicilio. ",
+    tags: [
+      "React Native",
+      "Redux Toolkit",
+      "RTK Query",
+      "React Native Material",
+      "Figma",
+    ],
+    imageUrl: dePratiImg,
   },
   {
-    title: "rmtDev",
+    title: "Dugodo App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Trabaje un año como freelance una app móvil desarrollada con React Native, tipo red social para viajeros llamada Dugodo",
+    tags: [
+      "React Native CLI",
+      "Redux Toolkit",
+      "TypeScript",
+      "Apolo Client",
+      "GraphQL",
+      "Express js",
+    ],
+    imageUrl: dugodoImg,
   },
   {
-    title: "Word Analytics",
+    title: "Buucly.com App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Desarrolle una plataforma que permite crear libros personalizados al instante utilizando inteligencia artificial. Usando  el modelo GPT-4o de OpenAI, los usuarios pueden generar libros sobre cualquier tema en minutos. La plataforma incluye una biblioteca virtual, vista previa de contenido antes de la generación final, y opción de lectura dentro de la app",
+    tags: [
+      "React Js",
+      "Next.js",
+      "Tailwind",
+      "TypeScript",
+      "Shadcn UI",
+      "Prisma",
+      "Supabase",
+      "OpenAI",
+    ],
+    imageUrl: buuclyImg,
   },
 ] as const;
 
@@ -91,17 +121,23 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "React Native",
   "Node.js",
   "Git",
   "Tailwind",
+  "TypeORM",
   "Prisma",
+  "SQL",
   "MongoDB",
+  "Firebase",
+  "Supabase",
+  "Redux Toolkit",
+  "React Query",
   "Redux",
   "GraphQL",
   "Apollo",
+  "Nest.js",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
 ] as const;

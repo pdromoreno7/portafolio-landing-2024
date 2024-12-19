@@ -26,11 +26,11 @@ export default function ContactFormEmail({
       <Head />
       <Preview>New message from your portfolio site</Preview>
       <Tailwind>
-        <Body className="bg-gray-100 text-black">
+        <Body className="text-black bg-gray-100">
           <Container>
-            <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
+            <Section className="px-10 py-4 my-10 bg-white rounded-md borderBlack">
               <Heading className="leading-tight">
-                You received the following message from the contact form
+                Tienes un nuevo mensaje de tu portfolio
               </Heading>
               <Text>{message}</Text>
               <Hr />
