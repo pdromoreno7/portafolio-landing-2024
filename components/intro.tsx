@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import imagenProfile from "@/public/me.jpeg";
+import imagenProfile from "@/public/miPhoto.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Inicio", 0.5);
