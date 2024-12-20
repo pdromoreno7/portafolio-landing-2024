@@ -46,7 +46,7 @@ export const experiencesData = [
   {
     title: "Frontend Developer | React Developer",
     location: "Zabud Tech - Full Remoto",
-    description: `Desarrolle mejoras, una aplicación web con React para poder hacer cargas masivas  de archivos, documentos y carpetas. Mejorando la visualización de carga y rendimiento de la aplicación en el navegador en un 40%`,
+    description: `Desarrollé mejoras, una aplicación web con React para poder hacer cargas masivas  de archivos, documentos y carpetas. Mejorando la visualización de carga y rendimiento de la aplicación en el navegador en un 40%`,
     icon: React.createElement(FaReact),
     date: "2022 - 2024",
   },
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Ingeniero en desarrollo Drupal/Desarrollador React Native",
     location: "Software One/Intergrupo - Full Remoto",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Logré puntuación alta en rendimiento para un proyecto de desarrollo de software frontend de un cliente reconocido a nivel nacional, reconocimiento en la adaptación técnica del perfil, calidad y compromiso.",
     icon: React.createElement(CgWorkAlt),
     date: "2022",
   },
@@ -72,7 +72,7 @@ export const projectsData = [
   {
     title: "De Prati",
     description:
-      "Trabaje 8 meses una aplicación móvil tipo 'Marketplace' con React Native. La aplicación incluyó características clave como gestión de microcréditos, pagos con tarjeta de crédito, catálogo de productos de varias marcas y gestión de envío a domicilio. ",
+      "Trabajé 8 meses una aplicación móvil tipo 'Marketplace' con React Native. La aplicación incluyó características clave como gestión de microcréditos, pagos con tarjeta de crédito, catálogo de productos de varias marcas y gestión de envío a domicilio. ",
     tags: [
       "React Native",
       "Redux Toolkit",
@@ -85,7 +85,7 @@ export const projectsData = [
   {
     title: "Dugodo App",
     description:
-      "Trabaje un año como freelance una app móvil desarrollada con React Native, tipo red social para viajeros llamada Dugodo",
+      "Trabajé un año como freelance una app móvil desarrollada con React Native, tipo red social para viajeros llamada Dugodo",
     tags: [
       "React Native CLI",
       "Redux Toolkit",
@@ -99,7 +99,7 @@ export const projectsData = [
   {
     title: "Buucly.com App",
     description:
-      "Desarrolle una plataforma que permite crear libros personalizados al instante utilizando inteligencia artificial. Usando  el modelo GPT-4o de OpenAI, los usuarios pueden generar libros sobre cualquier tema en minutos. La plataforma incluye una biblioteca virtual, vista previa de contenido antes de la generación final, y opción de lectura dentro de la app",
+      "Desarrollé una plataforma que permite crear libros personalizados al instante utilizando inteligencia artificial. Usando  el modelo GPT-4o de OpenAI, los usuarios pueden generar libros sobre cualquier tema en minutos. La plataforma incluye una biblioteca virtual, vista previa de contenido antes de la generación final, y opción de lectura dentro de la app",
     tags: [
       "React Js",
       "Next.js",
