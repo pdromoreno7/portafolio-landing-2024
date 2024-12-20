@@ -7,6 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   const [isMounted, setIsMounted] = useState(false);
