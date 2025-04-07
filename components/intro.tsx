@@ -1,34 +1,30 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithub } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import imagenProfile from "@/public/me.jpeg";
-import { FaWhatsapp } from "react-icons/fa";
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { FaGithub } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
+import imagenProfile from '@/public/me.jpeg';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Intro() {
-  const { ref } = useSectionInView("Inicio", 0.5);
+  const { ref } = useSectionInView('Inicio', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-    >
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
           >
@@ -64,15 +60,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hola, soy Pedro Moreno.</span> Soy un{" "}
-        <span className="font-bold">desarrollador full-stack</span> con{" "}
-        <span className="font-bold">3 años</span> de experiencia. Disfruto crear{" "}
-        <span className="italic">sitios web y aplicaciones</span>. Mi enfoque es{" "}
-        <span className="underline">
-          {" "}
-          React (Next.js), React Native y Nest.js{" "}
-        </span>
-        .
+        <span className="font-bold">Hola, soy Pedro Moreno.</span> Soy un{' '}
+        <span className="font-bold">desarrollador full-stack</span> con <span className="font-bold">3 años</span> de
+        experiencia. Disfruto crear <span className="italic">sitios web y aplicaciones</span>. Mi enfoque es{' '}
+        <span className="underline"> React (Next.js), React Native y Nest.js </span>.
       </motion.h1>
 
       <motion.div
@@ -87,21 +78,19 @@ export default function Intro() {
           href="#contact"
           className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
           onClick={() => {
-            setActiveSection("Contacto");
+            setActiveSection('Contacto');
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contáctame{" "}
-          <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
+          Contáctame <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
         <a
           className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
-          href="/CV-Pedro-Moreno-Alvarez-2024-27.pdf"
+          href="/Cv-Pedro-Moreno-Frontend-2025.pdf"
           download
         >
-          Download CV{" "}
-          <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
+          Download CV <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
 
         <a
