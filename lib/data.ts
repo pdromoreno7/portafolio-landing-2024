@@ -125,4 +125,7 @@ export const skillsData = [
   'Express',
   'PostgreSQL',
   'Python',
+  'Claude Code',
+  'MCP Servers',
+  'Cursor',
 ] as const;

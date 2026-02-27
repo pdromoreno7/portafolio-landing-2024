@@ -61,7 +61,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hola, soy Pedro Moreno.</span> Soy un{' '}
-        <span className="font-bold">desarrollador full-stack</span> con <span className="font-bold">3 años</span> de
+        <span className="font-bold">desarrollador full-stack</span> con <span className="font-bold">5 años</span> de
         experiencia. Disfruto crear <span className="italic">sitios web y aplicaciones</span>. Mi enfoque es{' '}
         <span className="underline"> React (Next.js), React Native y Nest.js </span>.
       </motion.h1>
