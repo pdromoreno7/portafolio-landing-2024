@@ -46,9 +46,22 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
-              </p>
+              {typeof item.description === "string" ? (
+                <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                  {item.description}
+                </p>
+              ) : (
+                <ul className="!mt-1 list-disc pl-5 space-y-1 text-gray-700 dark:text-white/75">
+                  {item.description.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+              )}
+              {item.tech && (
+                <p className="!mt-2 !font-normal text-sm text-gray-700 dark:text-white/75">
+                  <span className="font-medium">Tecnologías:</span> {item.tech}
+                </p>
+              )}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

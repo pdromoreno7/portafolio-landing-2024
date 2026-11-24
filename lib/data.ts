@@ -6,6 +6,24 @@ import { LuGraduationCap } from 'react-icons/lu';
 import dePratiImg from '@/public/deprati.png';
 import dugodoImg from '@/public/dugodo.png';
 import buuclyImg from '@/public/buucly.png';
+import type { StaticImageData } from 'next/image';
+
+type Experience = {
+  title: string;
+  location: string;
+  description: string | readonly string[];
+  tech?: string;
+  icon: React.ReactNode;
+  date: string;
+};
+
+type ProjectData = {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  // null = imagen pendiente; se muestra un placeholder
+  imageUrl: StaticImageData | null;
+};
 
 export const links = [
   {
@@ -15,6 +33,10 @@ export const links = [
   {
     name: 'About',
     hash: '#about',
+  },
+  {
+    name: 'Cómo trabajo',
+    hash: '#process',
   },
   {
     name: 'Proyectos',
@@ -34,12 +56,16 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData: readonly Experience[] = [
   {
     title: 'Software Engineer',
     location: 'Leasey.AI - Canada - Remoto',
-    description:
-      'Desarrollo full stack en arquitectura monorepo: frontend con React y Next.js, backend BFF con Nest.js y servicios en Python. Implementé servidores MCP e integraciones con IA, y creé skills para agentes de IA. Tecnologías: TypeScript, React, Next.js, Node.js, Nest.js, Python, AWS',
+    description: [
+      'Desarrollo full stack en un monorepo: frontend en React y Next.js, BFF en NestJS.',
+      'Servicios en Python y servidores MCP que conectan el producto con LLMs y agentes.',
+      'Skills para agentes que automatizan tareas de desarrollo.',
+      'Infraestructura en AWS.',
+    ],
     icon: React.createElement(CgWorkAlt),
     date: 'Enero 2025 - present',
   },
@@ -50,6 +76,20 @@ export const experiencesData = [
       'Desarrollé funcionalidades en la landing page de pagos, en la aplicación móvil de Movistar Colombia con React Native y en el BFF (Backend for Frontend). Tecnologías: React, React Native, TypeScript, Node.js',
     icon: React.createElement(FaReact),
     date: 'Noviembre 2025 - Abril 2026',
+  },
+  {
+    title: 'Full Stack Developer - Consultor externo',
+    location: 'CREE Comunicaciones - Remoto',
+    description: [
+      'Desarrollé el Portal de Pagos v2 de punta a punta: frontend, backend e integraciones.',
+      'Integración de pasarelas de pago (migración de Wompi a Mercado Pago) y del ERP Siigo para facturación y activación automática de servicios.',
+      'Implementé monitoreo de errores con Sentry y skills para revisarlos, junto con agentes que verifican los errores de forma automática.',
+      'Seguridad: verificación OTP antes del paso a producción, en cumplimiento de la Ley 1581 de protección de datos.',
+      'Entregas por fases, con las decisiones técnicas documentadas.',
+    ],
+    tech: 'Next.js, React, TypeScript, GraphQL, Vercel, Sentry, Mercado Pago, Siigo',
+    icon: React.createElement(CgWorkAlt),
+    date: 'Noviembre 2024 - Abril 2025',
   },
   {
     title: 'Full-Stack Instructor in web development',
@@ -82,9 +122,9 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: '2021 - 2022',
   },
-] as const;
+]
 
-export const projectsData = [
+export const projectsData: readonly ProjectData[] = [
   {
     title: 'De Prati',
     description:
@@ -106,37 +146,61 @@ export const projectsData = [
     tags: ['React Js', 'Next.js', 'Tailwind', 'TypeScript', 'Shadcn UI', 'Prisma', 'Supabase', 'OpenAI'],
     imageUrl: buuclyImg,
   },
-] as const;
+  {
+    title: 'Portal de Pagos – CREE Comunicaciones',
+    description:
+      'Caso de ciclo completo: diseño, frontend, backend, integraciones, despliegue y monitoreo. Construí el Portal de Pagos v2 con migración de Wompi a Mercado Pago, integración con el ERP Siigo para facturación y activación automática de servicios, verificación OTP y monitoreo de errores con Sentry.',
+    tags: ['Next.js', 'React', 'TypeScript', 'GraphQL', 'Vercel', 'Sentry', 'Mercado Pago', 'Siigo'],
+    imageUrl: null,
+  },
+]
 
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'React Native',
-  'Node.js',
-  'Git',
-  'Tailwind',
-  'TypeORM',
-  'Prisma',
-  'SQL',
-  'MongoDB',
-  'Firebase',
-  'Supabase',
-  'Redux Toolkit',
-  'React Query',
-  'Redux',
-  'GraphQL',
-  'Apollo',
-  'Nest.js',
-  'Express',
-  'PostgreSQL',
-  'Python',
-  'Claude Code',
-  'MCP Servers',
-  'AI Agents & Skills',
-  'Monorepos',
-  'Cursor',
+  {
+    category: 'Frontend',
+    skills: ['React', 'Next.js', 'React Native', 'Angular', 'TypeScript', 'Tailwind', 'Redux Toolkit', 'React Query'],
+  },
+  {
+    category: 'Backend',
+    skills: ['Node.js', 'NestJS', 'Express', 'Python', 'GraphQL/Apollo'],
+  },
+  {
+    category: 'Datos',
+    skills: ['PostgreSQL', 'Supabase', 'MongoDB', 'Firebase', 'Prisma', 'TypeORM'],
+  },
+  {
+    category: 'Infra y despliegue',
+    skills: ['AWS', 'Vercel', 'VPS', 'CI/CD', 'Sentry', 'Monorepos'],
+  },
+  {
+    category: 'Diseño y prototipado',
+    skills: ['Figma', 'Claude Design', 'Stitch'],
+  },
+  {
+    category: 'IA y agentes',
+    skills: ['Claude Code', 'Cursor', 'Servidores MCP', 'Skills', 'Orquestación de agentes', 'Memoria persistente'],
+  },
+] as const;
+
+export const processData = [
+  {
+    title: 'Prototipo',
+    description: 'Wireframes y prototipos con Claude y Stitch para validar rápido.',
+  },
+  {
+    title: 'Sistema de diseño',
+    description: 'Claude Design y Figma, con DESIGN.md como fuente de verdad.',
+  },
+  {
+    title: 'Arquitectura y construcción',
+    description: 'Front, back y base de datos pensados para escalar.',
+  },
+  {
+    title: 'Despliegue continuo',
+    description: 'AWS, VPS o Vercel con CI/CD automatizado.',
+  },
+  {
+    title: 'Automatización con agentes',
+    description: 'Skills, MCP y flujos de revisión de UI, tests y errores.',
+  },
 ] as const;

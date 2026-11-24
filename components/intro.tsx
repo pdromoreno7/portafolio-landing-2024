@@ -33,7 +33,7 @@ export default function Intro() {
           >
             <Image
               src={imagenProfile}
-              alt="Ricardo portrait"
+              alt="Retrato de Pedro Moreno"
               width="192"
               height="192"
               quality="95"
@@ -58,16 +58,20 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.div
+        className="mt-4 mb-10 px-4"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hola, soy Pedro Moreno.</span> Soy un{' '}
-        <span className="font-bold">desarrollador full-stack</span> con <span className="font-bold">5 años</span> de
-        experiencia. Disfruto crear <span className="italic">sitios web y aplicaciones</span>. Mi enfoque es{' '}
-        <span className="underline"> React (Next.js), React Native y Nest.js </span>.
-      </motion.h1>
+        <h1 className="text-2xl font-bold !leading-[1.5] sm:text-4xl">
+          Pedro Moreno —{' '}
+          <span className="whitespace-nowrap">AI Product Builder · Full Stack</span>
+        </h1>
+        <p className="mt-4 text-lg !leading-[1.6] text-gray-700 sm:text-xl dark:text-white/75">
+          Llevo productos de la idea a producción: diseño, frontend, backend y despliegue, con un flujo de trabajo
+          potenciado por agentes de IA.
+        </p>
+      </motion.div>
 
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"

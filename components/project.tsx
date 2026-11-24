@@ -48,9 +48,10 @@ export default function Project({
           </ul>
         </div>
 
+        {imageUrl ? (
         <Image
           src={imageUrl}
-          alt="Project I worked on"
+          alt={`Captura de ${title}`}
           quality={95}
           className="sm:absolute  sm:block sm:top-8 sm:-right-40 sm:w-[28.25rem] sm:rounded-lg sm:shadow-2xl
         transition 
@@ -65,6 +66,14 @@ export default function Project({
 
         group-even:right-[initial] group-even:-left-40"
         />
+        ) : (
+          <div
+            aria-hidden="true"
+            className="hidden sm:flex items-center justify-center sm:absolute sm:top-8 sm:-right-40 sm:w-[28.25rem] sm:h-[18rem] sm:rounded-lg sm:shadow-2xl bg-gray-200 text-gray-500 dark:bg-white/10 dark:text-white/50 group-even:right-[initial] group-even:-left-40"
+          >
+            Imagen próximamente
+          </div>
+        )}
       </section>
     </motion.div>
   );

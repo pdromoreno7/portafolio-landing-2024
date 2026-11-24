@@ -10,9 +10,9 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pedro Moreno | Personal Portfolio",
+  title: "Pedro Moreno | AI Product Builder · Full Stack",
   description:
-    "Pedro Moreno is a full-stack developer with 3 years of experience.",
+    "Pedro Moreno, AI Product Builder y desarrollador full stack con 5 años de experiencia. Diseño, construyo y despliego productos web y móviles con IA.",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
+    <html lang="es" className="!scroll-smooth" suppressHydrationWarning>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
