@@ -36,11 +36,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Frontend Software Engineer',
-    location: 'Leasey AI - Canada - Remoto',
-    description: 'HTLM, CSS, JavaScript, Typescript, React js, Next js, Node.js, AWS',
+    title: 'Software Engineer',
+    location: 'Leasey.AI - Canada - Remoto',
+    description:
+      'Desarrollo full stack en arquitectura monorepo: frontend con React y Next.js, backend BFF con Nest.js y servicios en Python. Implementé servidores MCP e integraciones con IA, y creé skills para agentes de IA. Tecnologías: TypeScript, React, Next.js, Node.js, Nest.js, Python, AWS',
     icon: React.createElement(CgWorkAlt),
     date: 'Enero 2025 - present',
+  },
+  {
+    title: 'Full Stack Developer - Consultor externo',
+    location: 'Movistar Colombia - Remoto',
+    description:
+      'Desarrollé funcionalidades en la landing page de pagos, en la aplicación móvil de Movistar Colombia con React Native y en el BFF (Backend for Frontend). Tecnologías: React, React Native, TypeScript, Node.js',
+    icon: React.createElement(FaReact),
+    date: 'Noviembre 2025 - Abril 2026',
   },
   {
     title: 'Full-Stack Instructor in web development',
@@ -127,5 +136,7 @@ export const skillsData = [
   'Python',
   'Claude Code',
   'MCP Servers',
+  'AI Agents & Skills',
+  'Monorepos',
   'Cursor',
 ] as const;

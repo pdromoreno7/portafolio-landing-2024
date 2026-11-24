@@ -12,6 +12,9 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 import imagenProfile from '@/public/me.jpeg';
 import { FaWhatsapp } from 'react-icons/fa';
 
+// Cambiar a true para volver a mostrar el botón de descarga del CV
+const SHOW_CV_BUTTON = false;
+
 export default function Intro() {
   const { ref } = useSectionInView('Inicio', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -85,13 +88,15 @@ export default function Intro() {
           Contáctame <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
-        <a
-          className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
-          href="/Cv-Pedro-Moreno-Frontend-2025.pdf"
-          download
-        >
-          Download CV <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
-        </a>
+        {SHOW_CV_BUTTON && (
+          <a
+            className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
+            href="/Cv-Pedro-Moreno-Frontend-2025.pdf"
+            download
+          >
+            Download CV <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
+          </a>
+        )}
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
