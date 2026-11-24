@@ -178,7 +178,7 @@ export const skillsData = [
   },
   {
     category: 'IA y agentes',
-    skills: ['Claude Code', 'Cursor', 'Servidores MCP', 'Skills', 'Orquestación de agentes', 'Memoria persistente'],
+    skills: ['Claude Code', 'Cursor', 'Grok', 'Orca', 'Servidores MCP', 'Skills', 'Orquestación de agentes', 'Memoria persistente'],
   },
 ] as const;
 

@@ -32,16 +32,12 @@ export default function ThemeContextProvider({
     }
   };
 
+  // Por defecto siempre claro (ignora la preferencia del sistema).
+  // Solo se usa oscuro si el visitante lo eligió con el botón.
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
-    if (localTheme) {
-      setTheme(localTheme);
-
-      if (localTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    if (localTheme === "dark") {
       setTheme("dark");
       document.documentElement.classList.add("dark");
     }

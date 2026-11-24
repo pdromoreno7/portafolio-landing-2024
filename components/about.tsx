@@ -44,7 +44,10 @@ export default function About() {
         Creo <span className="font-medium">skills y servidores MCP</span> que
         automatizan tareas concretas, como revisar despliegues y errores con
         Sentry y Vercel, revisar la UI o analizar tests, y sé distinguir cuándo
-        vale la pena automatizar un paso. Mantengo contexto persistente entre
+        vale la pena automatizar un paso. Orquesto varios agentes en paralelo
+        con <span className="font-medium">Orca</span> y combino{" "}
+        <span className="font-medium">Claude Code, Cursor y Grok</span> según
+        la tarea. Mantengo contexto persistente entre
         sesiones con wikis LLM y memoria para agentes como Engram, lo que me
         permite coordinar varios agentes sobre un mismo proyecto sin perder el
         hilo.
