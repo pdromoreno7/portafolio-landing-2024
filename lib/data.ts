@@ -62,8 +62,7 @@ export const experiencesData: readonly Experience[] = [
     location: 'Leasey.AI - Canada - Remoto',
     description: [
       'Desarrollo full stack en un monorepo: frontend en React y Next.js, BFF en NestJS.',
-      'Servicios en Python y servidores MCP que conectan el producto con LLMs y agentes.',
-      'Skills para agentes que automatizan tareas de desarrollo.',
+      'Servicios en Python, y servidores MCP y skills para agentes que automatizan tareas de desarrollo.',
       'Infraestructura en AWS.',
     ],
     icon: React.createElement(CgWorkAlt),
@@ -184,23 +183,23 @@ export const skillsData = [
 
 export const processData = [
   {
-    title: 'Prototipo',
-    description: 'Wireframes y prototipos con Claude y Stitch para validar rápido.',
+    title: 'Validar antes de construir',
+    description: 'Prototipos y sistemas de diseño para alinear producto y desarrollo antes de escribir código.',
   },
   {
-    title: 'Sistema de diseño',
-    description: 'Claude Design y Figma, con DESIGN.md como fuente de verdad.',
+    title: 'Arquitectura que escala',
+    description: 'Frontend y backend con patrones de diseño, SOLID, clean architecture y pruebas.',
   },
   {
-    title: 'Arquitectura y construcción',
-    description: 'Front, back y base de datos pensados para escalar.',
+    title: 'Entregas continuas',
+    description: 'CI/CD y monitoreo para llevar cambios a producción sin fricción.',
   },
   {
-    title: 'Despliegue continuo',
-    description: 'AWS, VPS o Vercel con CI/CD automatizado.',
+    title: 'Contexto persistente',
+    description: 'Memoria compartida entre sesiones para que varios agentes trabajen sobre el mismo proyecto.',
   },
   {
-    title: 'Automatización con agentes',
-    description: 'Skills, MCP y flujos de revisión de UI, tests y errores.',
+    title: 'Desarrollo asistido por agentes',
+    description: 'Automatizo revisiones de UI, pruebas y errores para entregar más rápido sin perder calidad.',
   },
 ] as const;

@@ -19,48 +19,42 @@ export default function About() {
     >
       <SectionHeading>Acerca de mí</SectionHeading>
       <p className="mb-3">
-        Soy <span className="font-medium">desarrollador full stack</span> con{" "}
-        <span className="font-medium">5 años de experiencia</span> en productos
-        web y móviles. Hoy me enfoco en llevar productos{" "}
-        <span className="font-medium">de cero a producción</span> usando IA en
-        cada etapa.
+        <span className="font-medium">Software Engineer full stack</span> con{" "}
+        <span className="font-medium">5 años</span> construyendo plataformas web
+        y móviles para empresas y startups, y{" "}
+        <span className="font-medium">más de 12 proyectos entregados</span>. Hoy
+        me enfoco en{" "}
+        <span className="font-medium">IA aplicada al desarrollo de software</span>
+        : agentes, servidores MCP y automatización del ciclo de desarrollo.
       </p>
       <p className="mb-3">
-        Empiezo por el producto: prototipos y wireframes con{" "}
-        <span className="font-medium">Claude y Stitch</span>, sistemas de diseño
-        con <span className="font-medium">Claude Design conectado a Figma</span>,
-        documentados en archivos <span className="italic">DESIGN.md</span> que
-        sirven de fuente de verdad para el equipo y para los agentes. Después
-        diseño la arquitectura del frontend (
-        <span className="font-medium">React, Next.js, React Native</span>) y del
-        backend (<span className="font-medium">NestJS, Node.js, Python</span>),
-        modelo la base de datos y despliego en{" "}
-        <span className="font-medium">AWS, VPS o Vercel</span> con despliegues
-        continuos y automatizados.
+        He trabajado en todas las capas del producto: diseño de interfaz,
+        arquitectura frontend, APIs, bases de datos, integraciones con terceros
+        y despliegue en la nube. Me importa que lo que entrego se pueda mantener
+        y escalar, por eso aplico{" "}
+        <span className="font-medium">
+          principios SOLID, patrones de diseño, clean architecture y pruebas
+          unitarias
+        </span>
+        , con <span className="font-medium">CI/CD</span> para que cada cambio
+        llegue a producción de forma segura.
       </p>
       <p className="mb-3">
-        Trabajo con un{" "}
-        <span className="font-medium">flujo estandarizado y asistido por agentes</span>.
-        Creo <span className="font-medium">skills y servidores MCP</span> que
-        automatizan tareas concretas, como revisar despliegues y errores con
-        Sentry y Vercel, revisar la UI o analizar tests, y sé distinguir cuándo
-        vale la pena automatizar un paso. Orquesto varios agentes en paralelo
-        con <span className="font-medium">Orca</span> y combino{" "}
-        <span className="font-medium">Claude Code, Cursor y Grok</span> según
-        la tarea. Mantengo contexto persistente entre
-        sesiones con wikis LLM y memoria para agentes como Engram, lo que me
-        permite coordinar varios agentes sobre un mismo proyecto sin perder el
-        hilo.
+        En mis proyectos más recientes he integrado{" "}
+        <span className="font-medium">agentes de IA al flujo de desarrollo</span>
+        : skills y servidores MCP que automatizan la revisión de errores,
+        despliegues, interfaz y pruebas, y{" "}
+        <span className="font-medium">memoria persistente</span> para que varios
+        agentes trabajen sobre el mismo proyecto sin perder el contexto.
       </p>
       <p>
-        También he integrado IA dentro de los productos que construyo:{" "}
-        <span className="font-medium">servidores MCP e integraciones con LLMs</span>{" "}
-        en Leasey.AI, y{" "}
+        Fuera de mi trabajo con clientes construyo productos propios con IA,
+        como{" "}
         <a href="https://buucly.com/" target="_blank" className="italic">
-          Buucly.com
+          Buucly
         </a>
-        , una plataforma que genera libros personalizados con IA. Además enseño
-        desarrollo full stack en <span className="font-medium">Soy Henry</span>.
+        , y he enseñado desarrollo full stack a{" "}
+        <span className="font-medium">más de 100 estudiantes</span>.
       </p>
     </motion.section>
   );

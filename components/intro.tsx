@@ -68,8 +68,8 @@ export default function Intro() {
           <span className="whitespace-nowrap">AI Product Builder · Full Stack</span>
         </h1>
         <p className="mt-4 text-lg !leading-[1.6] text-gray-700 sm:text-xl dark:text-white/75">
-          Llevo productos de la idea a producción: diseño, frontend, backend y despliegue, con un flujo de trabajo
-          potenciado por agentes de IA.
+          Diseño, construyo y despliego productos web y móviles, con un flujo de trabajo potenciado por agentes de
+          IA.
         </p>
       </motion.div>
 
